@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Uses your heart-bg.jpg file */
     background: #ffdee9 url("heart-bg.jpg") no-repeat center center fixed; 
     background-size: cover;
     font-family: 'Pixelify Sans', sans-serif;
@@ -36,10 +37,10 @@ body {
 #letter-window {
     background: white url("window.png") no-repeat center;
     background-size: 100% 100%;
-    padding: 60px;
+    padding: 50px;
     text-align: center;
     width: 380px;
-    min-height: 400px;
+    min-height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,18 +48,31 @@ body {
     border-radius: 20px;
 }
 
-#cat-img { width: 180px; margin-bottom: 20px; }
+#cat-img { width: 180px; margin-bottom: 10px; }
 
 #btn-group {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    min-height: 150px;
+    min-height: 150px; /* Space for the growing button */
 }
 
 .btn-img {
     width: 100px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+}
+
+/* Personal Letter Styling */
+.personal-letter {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px dashed #ff4d6d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #333;
+    max-width: 280px;
 }

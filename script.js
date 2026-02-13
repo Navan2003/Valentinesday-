@@ -6,23 +6,23 @@ const catImg = document.getElementById('cat-img');
 const questionText = document.getElementById('question');
 const finalText = document.getElementById('final-text');
 
-// 1. Open envelope
+// 1. Open envelope logic
 envelopeDiv.addEventListener('click', () => {
     envelopeDiv.style.display = 'none';
     letterDiv.style.display = 'flex';
 });
 
-// 2. Growing Yes button logic
+// 2. Make Yes button grow when No is clicked
 let currentScale = 1;
 noBtn.addEventListener('click', () => {
-    currentScale += 0.5;
+    currentScale += 0.5; // Increases size by 50% each click
     yesBtn.style.transform = `scale(${currentScale})`;
 });
 
-// 3. Yes button click logic
+// 3. Final Success logic
 yesBtn.addEventListener('click', () => {
-    questionText.innerText = "LETS GOOOOOOOOOOOO! ❤️";
-    catImg.src = "cat_dance.gif";
+    questionText.innerText = "Yippie! ❤️";
+    catImg.src = "cat_dance.gif"; // Switches to your dancing cat
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
     finalText.style.display = 'block';
